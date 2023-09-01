@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 70px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li:first-of-type {
+  float: left;
+  font-size: 1.2em;
+}
+
+li a {
+  font-size: 1.8em;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+section.hero{
+  height: 90vh;
+  width: 100vw;
+  background-color: beige;
+  background-image: url(IMG/showcase.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section.history {
+  width: 100vw;
+  height: 700px;
+  
+}
+
+div.img-left {
+  float: left;
+  width: 50%;
+  height: 400px;
+  background-image: url(IMG/test-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: blue;
+}
+
+div.img-right {
+  float: right;
+  width: 50%;
+  text-align: center;  
+}
+
+div.content {
+  margin-top: 50px;
+}
+
+p.title {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+p.content {
+  font-size: 1.2em;
+  padding: 0 40px;
+  word-spacing: 0.4em;
+  margin-bottom: 25px;
+}
+
+span.color {
+  color: burlywood;
+}
+
+a.read_more {
+  font-size: 1.6em;
+  color: black;
+  padding: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: beige;
+}
+
+a.read_more:hover {
+  background-color: burlywood;
+}
