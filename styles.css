@@ -66,6 +66,10 @@ ul li span {
   padding: 50px;
 }
 
+ul li.home {
+  margin-top: 0;
+}
+
 section.hero {
   color: #fff;
   text-align: center;
@@ -202,7 +206,6 @@ footer {
   font-size: 1.2em;
   background-color: rgb(78, 77, 77);
   color: #fff;
- 
 }
 
 footer p {
