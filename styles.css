@@ -334,6 +334,46 @@ div.email {
   margin-top: 70px;
 }
 
+section.form {
+  width: 80%;
+  height: 700px;
+  margin: auto;
+}
+
+section.form h1 {
+  font-size: 48px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section.form span {
+  color: burlywood;
+}
+
+label, p.contact {
+  font-size: 1.2em;
+}
+
+form input, textarea {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+}
+
+form input:focus, textarea:focus {
+  border: 3px solid burlywood;
+}
+
+input.btn {
+  font-size: larger;
+  width: fit-content;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
 footer {
   width: 100%;
   height: 100px;
