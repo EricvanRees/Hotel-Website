@@ -314,6 +314,26 @@ div.img_guest_two_p {
   width: 90%;
 }
 
+section.info {
+  width: 100%;
+  height: 250px;
+  background-color: darkgray;
+}
+
+div.location, div.phone { 
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+div.email {
+  float: right;
+  width: 33%;
+  text-align: center;
+  margin-top: 80px;
+}
+
 footer {
   width: 100%;
   height: 100px;
