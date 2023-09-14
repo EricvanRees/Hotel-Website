@@ -4,82 +4,122 @@
   box-sizing: border-box;
 }
 
-body {
+/* Main Styling */
+
+html, body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
   overflow-x: hidden;
   font-size: 1rem;
 }
 
-nav {
-  width: 100%;
-  height: 118px;
-  overflow: hidden;
-  z-index: -1;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-ul li {
-  float: right;
-}
-
-li a {
-  font-size: 1.4em;
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 45px 50px;
+a {
+  color: #333;
   text-decoration: none;
 }
 
-li a:hover {
-  color: burlywood;
-  background-color: rgb(117, 117, 117);
+h1, h2, h3 {
+  padding-bottom: 20px; 
 }
 
-ul li:first-of-type {
-  float: left;
-  margin-left: 150px;
-  margin-top: 30px;
+p {
+  margin: 10px 0;
 }
 
-ul li:last-of-type a {
+/* Utility Classes */
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary {
   color: burlywood;
-  background-color: rgb(117, 117, 117);
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: burlywood;
+  color: #333;
+}
+
+.btn-light {
+  background: burlywood;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #333;
+  color: burlywood;
+}
+
+/* navbar */
+nav {
+ background: #333;
+ color: #fff;
+ overflow: auto;
+}
+
+nav a {
+  color: #fff;
 } 
 
-ul li:first-child {
-  font-size: 1.6em;
-  font-weight: bold;
+nav h1 {
+  float: left;
+  padding-top: 20px;
 }
 
-ul li span {
-  font-size: 1.8em;
-  color: white;
-  font-weight: bold;
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
   text-align: center;
-  padding: 50px;
 }
 
-ul li.home {
-  margin-top: 0;
+nav ul li a:hover,
+nav ul li a.current {
+  background: #444;
+  color: burlywood;
 }
 
-section.hero {
-  color: #fff;
-  text-align: center;
-  height: 700px;
-  width: 100vw;
-  background-color: beige;
-  background-image: url(IMG/showcase.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+/* Showcase */ 
+
+#showcase {
+  height: 600px;
+  background: url(../IMG/showcase.jpg) no-repeat center center/cover;
 }
 
 section.hero h1 {
@@ -87,15 +127,46 @@ section.hero h1 {
   padding-top: 175px;
 }
 
-section.hero span {
-  color: burlywood;
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
 }
 
-section.hero p {
-  font-size: 1.4em;
-  font-weight: bold;
-  padding: 30px 10px;
-  margin-bottom: 50px;
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* Home Info */
+
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url('../IMG/photo-1.jpg') no-repeat;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
 }
 
 a.about {
@@ -121,11 +192,10 @@ div.img-left {
   float: left;
   width: 50%;
   height: 450px;
-  background-image: url(IMG/test-bg.jpg);
+  background-image: url(../IMG/test-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  background-color: blue; 
+  background-size: cover; 
 }
 
 div.img-right {
@@ -135,10 +205,6 @@ div.img-right {
   text-align: center;  
   background-color: #333;
   color: white;
-}
-
-div.content {
-  margin-top: 50px;  
 }
 
 p.title {
